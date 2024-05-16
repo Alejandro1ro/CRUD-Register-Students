@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="icon"
+    href=https://cdn-icons-png.flaticon.com/256/5441/5441859.png>
+    <script
+      src="https://kit.fontawesome.com/c7c2ced7ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Registro de Usuarios</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="container-1">
+        <form id="form">
+          <h1>Registro</h1>
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              id="nombre"
+              class="inputs"
+              name="nombre"
+              placeholder="Nombre"
+            />
+          </div>
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              id="apellido"
+              class="inputs"
+              name="apellido"
+              placeholder="Apellido"
+            />
+          </div>
+          <div>
+            <i class="fa-solid fa-id-card"></i>
+            <input
+              type="number"
+              id="matricula"
+              class="inputs"
+              name="matricula"
+              placeholder="Matricula (8-11)"
+            />
+          </div>
+          <div>
+            <i class="fa-solid fa-pencil"></i>
+            <input
+              type="number"
+              id="nota"
+              class="inputs"
+              name="nota"
+              placeholder="Nota (0 - 100)"
+            />
+          </div>
+          <button type="submit" id="submit" class="btn-submit">Guardar</button>
+        </form>
+      </section>
+      <section class="container-2">
+        <div class="containerTable">
+          <table>
+            <thead>
+              <tr class="tr">
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Matricula</th>
+                <th>Nota</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

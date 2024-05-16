@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #404040;
+  color: #f2f2f2;
+}
+
+@media (max-width: 868px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .container-1,
+  .container-2 {
+    width: 96% !important;
+  }
+}
+
+.container-1,
+.container-2 {
+  border-radius: 5px;
+  margin: 10px;
+  height: 500px;
+  background: #303030;
+  color: #f2f2f2;
+}
+
+.container-1 {
+  width: 30%;
+}
+
+.container-2 {
+  width: 60%;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 3.2em;
+  align-items: center;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.8em;
+  margin: 25px 0px 10px 0px;
+}
+
+form div i {
+  width: 4%;
+  font-size: 1.2em;
+}
+
+form input {
+  width: 95%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px #f2f2f2 solid;
+  outline: none;
+  transition: 0.2s;
+}
+
+input,
+input::placeholder,
+button {
+  font-family: Poppins;
+  font-size: 15px;
+}
+
+form button {
+  color: #f2f2f2;
+  width: 10em;
+  height: 2.4em;
+  border: none;
+  border-radius: 0.5em 1.2em;
+  margin-top: 1.6em;
+  font-weight: bold;
+  background-color: #41c291;
+  font-size: 1.1em;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+form button:hover {
+  transform: scale(1.04);
+}
+
+.containerTable {
+  padding: 2.2em;
+  overflow: hidden;
+  transition: .2s;
+  
+}
+
+.containerTable::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: transparent;
+}
+
+.containerTable::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+
+
+table,
+tr,
+th,
+td {
+  border: 2px solid #f2f2f2;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.5em;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  color: #f2f2f2;
+}
+
+.btnL {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 0;
+  height: 41px;
+}
+
+.btnL button {
+  background: transparent;
+  border: none;
+  color: #f2f2f2;
+}
+
+.btnL button:disabled i,
+.btnL button:disabled i:hover {
+  color: grey;
+}
+
+.btnL button:nth-child(1):hover i {
+  color: #4191c2;
+}
+
+.btnL button:nth-child(2):hover i {
+  color: #c24191;
+}
+
+.btnL button i {
+  font-size: 1.1em;
+}
+
+.btnL button i:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.inputIncorrect {
+  background: #c24191;
+  color: #f2f2f2;
+}
+
+.inputIncorrect::placeholder {
+  color: #f2f2f2;
+}
